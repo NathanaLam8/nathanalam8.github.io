@@ -32,6 +32,10 @@ function changeFact(num){
 	}
 }
 
+	var x = document.querySelector('menu');
+	var state = getComputedStyle(x, null);
+	var fonts = state.fontFamily;
+
 function changeBackground(color){
 	if(color == 'light'){
 		var section = document.querySelector('section');
@@ -42,6 +46,22 @@ function changeBackground(color){
 		document.querySelector('#image').style.backgroundColor = "aliceblue";
 		section.style.borderColor = "aquamarine";
 		document.getElementById('image').style.borderColor = "aquamarine";
+		
+		var buttons = document.querySelector('button');
+		
+		if(fonts == Sans Serif){
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "#075670";
+				buttons[i].style.Color = "deepskyblue";
+			}	
+		}
+		
+		else{
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "deepskyblue";
+				buttons[i].style.Color = "#075670";
+			}
+		}		
 	}
 	else if(color == 'cool'){
 		var section = document.querySelector('section');
@@ -53,6 +73,22 @@ function changeBackground(color){
 		document.querySelector('#image').style.backgroundSize = "1000px";
 		section.style.borderColor = "aquamarine";
 		document.getElementById('image').style.borderColor = "aquamarine";
+		
+		var buttons = document.querySelector('button');
+		
+		if(fonts == Sans Serif){
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "#075670";
+				buttons[i].style.Color = "deepskyblue";
+			}	
+		}
+		
+		else{
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "deepskyblue";
+				buttons[i].style.Color = "#075670";
+			}
+		}
 	}
 	else if(color == 'ocean'){
 		var section = document.querySelector('section');
@@ -63,6 +99,22 @@ function changeBackground(color){
 		document.querySelector('#image').style.backgroundColor = "#6fcdff";
 		section.style.borderColor = "#1da2d8";
 		document.querySelector('#image').style.borderColor = "#1da2d8";
+		
+		var buttons = document.querySelector('button');
+		
+		if(fonts == Sans Serif){
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "#94bdff";
+				buttons[i].style.Color = "#0f4294";
+			}	
+		}
+		
+		else{
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "#0f4294";
+				buttons[i].style.Color = "#94bdff";
+			}
+		}
 	}
 	else{
 		var section = document.querySelector('section');
@@ -74,5 +126,26 @@ function changeBackground(color){
 		section.style.borderColor = "#595959";
 		document.getElementById('image').style.borderColor = "#595959";
 		
+				
+		var buttons = document.querySelector('button');
+		
+		if(fonts == Sans Serif){
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "#5d5e5e";
+				buttons[i].style.Color = "#white";
+			}	
+		}
+		
+		else{
+			for(var i = 0; i < 5; i++){
+				buttons[i].style.backgroundColor = "white";
+				buttons[i].style.Color = "#5d5e5e";
+			}
+		}
+		
+		
 	}
+	
+
+	
 }
