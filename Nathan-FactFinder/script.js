@@ -1,3 +1,7 @@
+var buttons = document.getElementById('menu');
+var Theme = "light";
+
+
 function changeFact(num){
 	var x = num;
 	
@@ -41,6 +45,13 @@ function changeBackground(color){
 		section.style.borderColor = "aquamarine";
 		document.getElementById('image').style.borderColor = "aquamarine";
 		
+		
+
+		
+		for(var i = 0;i < 5;i++){
+			buttons[i].style.backgroundColor = "deepskyblue";
+			buttons[i].style.color = "#075670";
+		}
 	}
 	else if(color == 'cool'){
 		var section = document.querySelector('section');
@@ -52,7 +63,12 @@ function changeBackground(color){
 		document.querySelector('#image').style.backgroundSize = "1000px";
 		section.style.borderColor = "aquamarine";
 		document.getElementById('image').style.borderColor = "aquamarine";
-	
+		
+		
+		for(var i = 0;i < 5;i++){
+			buttons[i].style.backgroundColor = "deepskyblue";
+			buttons[i].style.color = "#075670";
+		}
 	}
 	else if(color == 'ocean'){
 		var section = document.querySelector('section');
@@ -63,8 +79,12 @@ function changeBackground(color){
 		document.querySelector('#image').style.backgroundColor = "#6fcdff";
 		section.style.borderColor = "#1da2d8";
 		document.querySelector('#image').style.borderColor = "#1da2d8";
-
 		
+		
+		for(var i = 0;i < 5;i++){
+			buttons[i].style.backgroundColor = "#73dcff";
+			buttons[i].style.color = "#1a81a3";
+		}
 	}
 	else{
 		var section = document.querySelector('section');
@@ -76,9 +96,162 @@ function changeBackground(color){
 		section.style.borderColor = "#595959";
 		document.getElementById('image').style.borderColor = "#595959";
 		
-
+		
+		for(var i = 0;i < 5;i++){
+			buttons[i].style.backgroundColor = "#525252";
+			buttons[i].style.color = "#b0aeae";
+		}
 		
 	}
+	Theme = color;
+
+}
+
+function fact1(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact1').style.backgroundColor = "#787878";
+		document.getElementById('Fact1').style.color = "#e3e3e3";
+	}
+	
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact1').style.backgroundColor = "#82faf0";
+		document.getElementById('Fact1').style.color = "#4e948e";
+	}
+	
+	else{
+		document.getElementById('Fact1').style.backgroundColor = "s#599af0";
+		document.getElementById('Fact1').style.color = "#97d9e8";
+	}
+}
+function fact2(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact2').style.backgroundColor = "#787878";
+		document.getElementById('Fact2').style.color = "#e3e3e3";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact2').style.backgroundColor = "#82faf0";
+		document.getElementById('Fact2').style.color = "#4e948e";
+	}
+	else{
+		document.getElementById('Fact2').style.backgroundColor = "#599af0";
+		document.getElementById('Fact2').style.color = "#97d9e8";
+	}
+}
+function fact3(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact3').style.backgroundColor = "#787878";
+		document.getElementById('Fact3').style.color = "#e3e3e3";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact3').style.backgroundColor = "#82faf0";
+		document.getElementById('Fact3').style.color = "#4e948e";
+	}
+	else{
+		document.getElementById('Fact3').style.backgroundColor = "#599af0";
+		document.getElementById('Fact3').style.color = "#97d9e8";
+	}
+}
+function fact4(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact4').style.backgroundColor = "#787878";
+		document.getElementById('Fact4').style.color = "#e3e3e3";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact4').style.backgroundColor = "#82faf0";
+		document.getElementById('Fact4').style.color = "#4e948e";
+	}
+	else{
+		document.getElementById('Fact4').style.backgroundColor = "#599af0";
+		document.getElementById('Fact4').style.color = "#97d9e8";
+	}
+}
+function fact5(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact5').style.backgroundColor = "#545454";
+		document.getElementById('Fact5').style.color = "#e3e3e3";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact5').style.backgroundColor = "#82faf0";
+		document.getElementById('Fact5').style.color = "#4e948e";
+	}
+	else{
+		document.getElementById('Fact5').style.backgroundColor = "#599af0";
+		document.getElementById('Fact5').style.color = "#97d9e8";
+	}
+}
 
 
+function Fact1Reset(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact1').style.backgroundColor = "#525252";
+		document.getElementById('Fact1').style.color = "#b0aeae";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact1').style.backgroundColor = "#73dcff";
+		document.getElementById('Fact1').style.color = "#1a81a3";
+	}
+	else{
+		document.getElementById('Fact1').style.backgroundColor = "deepskyblue";
+		document.getElementById('Fact1').style.color = "#075670";
+	}
+	
+}
+
+function Fact2Reset(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact2').style.backgroundColor = "#525252";
+		document.getElementById('Fact2').style.color = "#b0aeae";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact2').style.backgroundColor = "#73dcff";
+		document.getElementById('Fact2').style.color = "#1a81a3";
+	}
+	else{
+		document.getElementById('Fact2').style.backgroundColor = "deepskyblue";
+		document.getElementById('Fact2').style.color = "#075670";
+	}
+	
+}
+function Fact3Reset(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact3').style.backgroundColor = "#525252";
+		document.getElementById('Fact3').style.color = "#b0aeae";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact3').style.backgroundColor = "#73dcff";
+		document.getElementById('Fact3').style.color = "#1a81a3";
+	}
+	else{
+		document.getElementById('Fact3').style.backgroundColor = "deepskyblue";
+		document.getElementById('Fact3').style.color = "#075670";
+	}
+	
+}
+function Fact4Reset(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact4').style.backgroundColor = "#525252";
+		document.getElementById('Fact4').style.color = "#b0aeae";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact4').style.backgroundColor = "#73dcff";
+		document.getElementById('Fact4').style.color = "#1a81a3";
+	}
+	else{
+		document.getElementById('Fact4').style.backgroundColor = "deepskyblue";
+		document.getElementById('Fact4').style.color = "#075670";
+	}
+}
+function Fact5Reset(){
+	if(Theme == 'dark'){
+		document.getElementById('Fact5').style.backgroundColor = "#525252";
+		document.getElementById('Fact5').style.color = "#b0aeae";
+	}
+	else if(Theme == 'ocean'){
+		document.getElementById('Fact5').style.backgroundColor = "#73dcff";
+		document.getElementById('Fact5').style.color = "#1a81a3";
+	}
+	else{
+		document.getElementById('Fact5').style.backgroundColor = "deepskyblue";
+		document.getElementById('Fact5').style.color = "#075670";
+	}
 }
