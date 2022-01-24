@@ -1,0 +1,107 @@
+html{
+	height:100%;
+}
+main{
+	width:900px;
+	height:900px;
+	display:grid;
+	grid-template-rows:3fr 1fr 22fr;
+	padding:10px;
+}
+#menu{
+	display:grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	padding:10px;
+	grid-gap:12px;
+	
+}
+
+#menu > button{
+	background-color:deepskyblue;
+	color:#075670;
+	font-weight:bold;
+	font-size:18px;
+	font-family:'Sans Serif';
+	border-radius:10px;
+	border-color:#006687;
+}
+
+#menu > button:hover{
+	background-color:#4f67c9;
+	color:#97d9e8;
+	font-weight:lighter;
+}
+section{
+	border: 3px solid aquamarine;
+	background-color:aliceblue;
+	border-radius:20px;
+	padding:20px;
+}
+
+body{
+	background-color:aliceblue;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#backgroundOptions{
+	display:grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding:10px;
+	grid-gap:12px;
+}
+
+#button1{
+	background-color:#6f7885;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+	border-radius:10px;
+}
+
+#button1:hover{
+	background-color:#363838;
+}
+#button2{
+	background-color:#f0f0f0;
+	color:black;
+	font-weight:bold;
+	font-size:18px;
+	border-radius:10px;
+}
+
+#button2:hover{
+	background-color:#ccd1d9;
+	color:#2d2e2e;
+
+}
+
+#button3{
+	background-color:blue;
+	color:yellow;
+	font-weight:bold;
+	font-size:18px;
+	border-radius:10px;
+}
+
+#button3:hover{
+	background-color:yellow;
+	color:blue;
+
+}
+
+#button4{
+	background-color:#6fcdff;
+	color:#1da2d8;
+	font-weight:bold;
+	font-size:18px;
+	border-radius:10px;
+}
+
+#button4:hover{
+	background-color:#338ba3;
+	color:#065f78;
+
+}
